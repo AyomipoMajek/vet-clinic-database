@@ -11,3 +11,23 @@ CREATE TABLE animals (
 
 -- to add the species column
 ALTER TABLE animals ADD COLUMN species VARCHAR(255);
+
+
+-- Create owners table
+CREATE TABLE owners (
+  id SERIAL PRIMARY KEY,
+  full_name VARCHAR(255) NOT NULL,
+  age INTEGER NOT NULL
+);
+
+-- Create species table
+CREATE TABLE species (
+  id SERIAL PRIMARY KEY,
+  name VARCHAR(255) NOT NULL
+);
+
+-- Modify animals table
+ALTER TABLE animals
+  DROP COLUMN species,
+  ADD COLUMN species_id INTEGER REFERENCES species(id),
+  ADD COLUMN owner_id INTEGER REFERENCES owners(id);
