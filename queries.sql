@@ -241,3 +241,8 @@ WHERE vets.name = 'Maisy Smith'
 GROUP BY species_name
 ORDER BY visit_count DESC
 LIMIT 1;
+
+-- Add index to speed up queries
+CREATE INDEX visits_animal_id_idx ON visits (animal_id); 
+CREATE INDEX visits_vet_id_idx ON visits (vet_id); 
+CREATE INDEX owners_email_idx ON owners (email); 
