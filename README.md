@@ -1,5 +1,7 @@
-
-<h3><b>README</b></h3>
+<a name="readme-top"></a>
+<!-- TABLE OF CONTENTS -->
+<img src="./screenshots/Database ER diagram (crow's foot).jpeg" alt="Clinic diagram" width="1000px" />
+<br>
 
 </div>
 <a name="readme-top"></a>
