@@ -117,7 +117,7 @@ Change the main branch to the right one, execute the following command:
 Example commands:
 
 ```sh
-  cd my-folder
+  cd my-flder
   git clone git@github.com:myaccount/my-project.git
 ```
 --->
