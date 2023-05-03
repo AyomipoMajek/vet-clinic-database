@@ -32,34 +32,3 @@ ALTER TABLE animals
   ADD COLUMN species_id INTEGER REFERENCES species(id),
   ADD COLUMN owner_id INTEGER REFERENCES owners(id);
 
-
--- Create a table named vets
-CREATE TABLE vets (
-  id SERIAL PRIMARY KEY,
-  name VARCHAR(255),
-  age INTEGER,
-  date_of_graduation DATE
-);
-
-
--- Create a "join table" called specializations
-CREATE TABLE specializations (
-  vet_id INTEGER REFERENCES vets (id),
-  species_id INTEGER REFERENCES species (id),
-  PRIMARY KEY (vet_id, species_id)
-);
-
-
--- Create a "join table" called visits
-CREATE TABLE visits (
-  id SERIAL PRIMARY KEY,
-  animal_id INTEGER REFERENCES animals(id),
-  vet_id INTEGER REFERENCES vets(id),
-  visit_date DATE
-);
-
--- Add an email column to your owners table
-ALTER TABLE owners ADD COLUMN email VARCHAR(120);
-
--- changed visit_date TO date_of_visit
-ALTER TABLE visits RENAME COLUMN visit_date TO date_of_visit;
