@@ -55,9 +55,9 @@ After you're finished please remove all the comments and instructions!
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Vet clinic database: create animals table] <a name="about-project"></a>
+# 📖 [Vet clinic database: database performance audit] <a name="about-project"></a>
 
-**[Vet clinic database: create animals table]** is a project about relational databases, it involves using an SQL data structure for a vet clinic. I started by creating one table, and step by step I will create a complete database with data about: animals, animals' owners, clinic employees & visits.
+**[Vet clinic database: query multiple tables]** is a project about relational databases, it involves using an SQL data structure for a vet clinic. I started by creating one table, and step by step I will create a complete database with data about: animals, animals' owners, clinic employees & visits.
 
 <!-- Features -->
 
